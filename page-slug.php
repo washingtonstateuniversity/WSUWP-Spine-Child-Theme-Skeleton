@@ -26,7 +26,7 @@
 		<article>
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-1-1', true );
-			if( ! empty( $column ) ) { echo $column; }
+			if( ! empty( $column ) ) { echo wp_kses_post( $column ); }
 			?>
 		</article>
 	</div>
@@ -34,7 +34,7 @@
 		<article>
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-1-2', true );
-			if( ! empty( $column ) ) { echo $column; }
+			if( ! empty( $column ) ) { echo wp_kses_post( $column ); }
 			?>
 		</article>
 	</div>
