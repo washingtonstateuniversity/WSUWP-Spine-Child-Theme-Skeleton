@@ -30,8 +30,6 @@ git status
 There are several places throughout the WSUWP Child Theme Skeleton code that should be changed to match the new theme.
 
 1. The theme header portion of the stylesheet in `css/00-banner.css` should be adjusted.
-
-1. The main plugin file, `wsuwp-plugin-skeleton.php`, should be renamed to `wsuwp-new-feature.php`.
 1. Update the project name in `composer.json`.
 1. Update the project name and URL in `package.json`.
 1. Update the ruleset name and description in `phpcs.ruleset.xml`.
