@@ -70,3 +70,13 @@ git add -A
 git commit -m "Initial commit"
 git push origin master
 ```
+
+### Maintaining the project structure
+
+The child theme CSS is maintained in the `css/` directory. Grunt tasks are responsible for concatenating these files in alphabetical order, running autoprefixer, and then linting the compiled CSS for errors. The final destination for the CSS is `style.css`. A source map is created in `style.css.map`.
+
+* CSS should be added and edited in the `css/` directory.
+* The built `style.css` is automatically generated **and** tracked in version control.
+* Run `grunt` to generate `style.css` before committing changes.
+
+When JavaScript is added to the theme, similar tasks can be added for linting, concatenating, and minifying the JavaScript as needed.
