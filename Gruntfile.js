@@ -2,6 +2,10 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
+        stylelint: {
+            src: [ "css/*.css" ]
+        },
+
         concat: {
             options: {
                 sourceMap: true
@@ -87,7 +91,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks( "grunt-contrib-csslint" );
     grunt.loadNpmTasks( "grunt-contrib-clean" );
     grunt.loadNpmTasks( "grunt-phpcs" );
+    grunt.loadNpmTasks( "grunt-stylelint" );
 
     // Default task(s).
-    grunt.registerTask('default', ['concat', 'postcss', 'csslint', 'clean']);
+    grunt.registerTask('default', ['stylelint','concat', 'postcss', 'csslint', 'clean']);
 };
