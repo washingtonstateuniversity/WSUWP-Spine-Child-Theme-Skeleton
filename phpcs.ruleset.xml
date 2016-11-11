@@ -5,9 +5,5 @@
     <rule ref="WordPress-Extra">
         <exclude name="WordPress.NamingConventions.ValidFunctionName" />
         <exclude name="WordPress.Files.FileName" />
-        <exclude name="WordPress.XSS.EscapeOutput" />
-        <exclude name="Generic.Formatting.DisallowMultipleStatements" />
-        <exclude name="WordPress.PHP.StrictComparisons" />
-        <exclude name="WordPress.WP.EnqueuedResources" />
     </rule>
 </ruleset>
