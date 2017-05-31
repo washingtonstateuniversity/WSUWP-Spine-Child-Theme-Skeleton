@@ -1,6 +1,8 @@
 WSUWP Spine Child Theme Skeleton
 ===============================
 
+[![Build Status](https://travis-ci.org/washingtonstateuniversity/WSUWP-Spine-Child-Theme-Skeleton.svg?branch=master)](https://travis-ci.org/washingtonstateuniversity/WSUWP-Spine-Child-Theme-Skeleton)
+
 A framework for building a [WordPress child theme](http://codex.wordpress.org/Child_Themes) for the [WSUWP Spine Parent Theme](https://github.com/washingtonstateuniversity/WSUWP-spine-parent-theme) at WSU.
 
 ## Initial setup
@@ -78,5 +80,6 @@ The child theme CSS is maintained in the `css/` directory. Grunt tasks are respo
 * CSS should be added and edited in the `css/` directory.
 * The built `style.css` is automatically generated **and** tracked in version control.
 * Run `grunt` to generate `style.css` before committing changes.
+* Use `grunt serve` to start a local web server and view the style guide.
 
 When JavaScript is added to the theme, similar tasks can be added for linting, concatenating, and minifying the JavaScript as needed.
