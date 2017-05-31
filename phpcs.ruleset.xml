@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="WSUWP Spine Child Theme Skeleton">
-    <description>Sniffs for the coding standards of the WSUWP Spine Child Theme Skeleton</description>
+<ruleset name="WSUWP Themes">
+    <description>Sniffs for the coding standards used in WSUWP Themes</description>
 
     <rule ref="WordPress-Extra">
         <exclude name="WordPress.NamingConventions.ValidFunctionName" />
