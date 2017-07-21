@@ -5,5 +5,10 @@
     <rule ref="WordPress-Extra">
         <exclude name="WordPress.NamingConventions.ValidFunctionName" />
         <exclude name="WordPress.Files.FileName" />
+        <exclude name="Squiz.PHP.EmbeddedPhp.NoSemicolon" />
+        <exclude name="Squiz.PHP.EmbeddedPhp.ContentBeforeEnd" />
+        <exclude name="Squiz.PHP.EmbeddedPhp.ContentBeforeOpen" />
+        <exclude name="Squiz.PHP.EmbeddedPhp.ContentAfterOpen" />
+        <exclude name="Squiz.PHP.EmbeddedPhp.ContentAfterEnd" />
     </rule>
 </ruleset>
