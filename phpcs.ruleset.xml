@@ -1,10 +1,14 @@
 <?xml version="1.0"?>
 <ruleset name="WSUWP Themes">
+
     <!-- Config flags for PHPCS
-     s flag: Show sniff codes in all reports.
-     v flag: Print verbose output.
--->
+		 s flag: Show sniff codes in all reports.
+		 v flag: Print verbose output.
+	-->
     <arg value="sv"/>
+
+    <!-- Use a more colorful output -->
+    <arg name="colors" />
 
     <!-- Check only PHP files -->
     <arg name="extensions" value="php"/>
@@ -12,16 +16,18 @@
     <!-- Check all files in this directory and the directories below it. -->
     <file>.</file>
 
-    <description>Sniffs for the coding standards used in WSUWP Themes</description>
+    <description>Sniffs for PHP coding standards used by WSUWP Themes</description>
 
     <rule ref="WordPress-Extra">
         <exclude name="WordPress.NamingConventions.ValidFunctionName" />
         <exclude name="WordPress.Files.FileName" />
+        <exclude name="WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned" />
         <exclude name="Squiz.PHP.EmbeddedPhp.NoSemicolon" />
         <exclude name="Squiz.PHP.EmbeddedPhp.ContentBeforeEnd" />
         <exclude name="Squiz.PHP.EmbeddedPhp.ContentBeforeOpen" />
         <exclude name="Squiz.PHP.EmbeddedPhp.ContentAfterOpen" />
         <exclude name="Squiz.PHP.EmbeddedPhp.ContentAfterEnd" />
         <exclude name="Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace" />
+        <exclude name="Generic.Formatting.MultipleStatementAlignment.NotSameWarning" />
     </rule>
 </ruleset>
