@@ -34,7 +34,6 @@ There are several places throughout the WSUWP Child Theme Skeleton code that sho
 1. The theme header portion of the stylesheet in `css/00-banner.css` should be adjusted.
 1. Update the project name in `composer.json`.
 1. Update the project name and URL in `package.json`.
-1. Update the ruleset name and description in `phpcs.ruleset.xml`.
 1. Update the name and description of the project in `README.md`, replacing all of this text.
 1. Update the name, copyright, and URL in `LICENSE`.
 1. If desired, replace `screenshot.png` with a screenshot of the child theme.
